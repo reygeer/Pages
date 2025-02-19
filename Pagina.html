@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Vincular el archivo CSS -->
+    <link rel="stylesheet" href="/Start_Boostrap/css/estilos.css">
+    <link rel="stylesheet" href="/Start_Boostrap/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <script src="./js/script.js" defer></script> <!-- Enlazamos el archivo JavaScript -->
+    <link rel="stylesheet" href="/Start_Boostrap/css/Styles_pagina.css">
+    <!-- Agregar el CDN de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+
+    <!-- Barra de navegación fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand mx-auto" href="#">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#acerca">Acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portafolio">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Datos_formulario.html">Datos formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Acerca de mí con margen superior para no ser cubierto -->
+    <section id="acerca" class="container mt-5 pt-5 text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2>Acerca de mí</h2>
+                  
+                <!-- Imagen de perfil -->
+                <img src="img/perfil.jpg" alt="Mi Perfil" class="perfil-img mb-4">
+                <p><h2 class="titulo">Soy Desarrollador de   <br>Software en <span class="typed"></span></h2>
+                    <h5>Soy un estudiante en la Universidad Tecnológica de Calvillo en la cual estoy aprendiendo a programar y a desarrollar diferentes lenguajes asi como tambien estoy aprendiendo a leerlos asi como estoy desarrollando multiples softwares en la carrera de Tecnologías de la Información y Desarrollo de Software multiplataforma. Me enfoco en desarrollar para diferentes dispositivos móviles y plataformas. Tambien estuve trabajando en diferentes aplicaciones en la primera que trabajamos fue con el lenguaje python este software es para que se administraran tutorias grupales individuales y para aquellos alumnos que tienen problemas para pagar colegiaturas o ecoomicos alimenticios etc, y en este software lo actualizamos para el lenguaje de html css y con conexion a base de datos MYSQL de forma local y creamos un apartado para que se creara un archivo word con los datos que se metian en formularios.Tambien vimos el lenguaje react y estuvimos enel concurso del hackaton en el que quedamos en 6 lugar en nuestra categoria.Despues participamos en un concurso llamado Hidrotalent en el cual quedamos en 6 lugar aunque hubo muchos interesados como el gobernador ya no recibimos respuestas.En este cuatrimestre estamos trabajando en crear una aplicacion para que controle un sistema que se encargara de el ahorro del agua y en este te dara opciones de ahorro mediante sus elecciones.</h5>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="container mt-5 text-center">
+        <h2>Portafolio</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/py.jpg" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Registro Tutorias</h5>
+                        <p class="card-text">Estuvimos trabajando en un proyecto para que se hicieran registro de tutorias individuales o grupales que se relizaban en la universidad...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/py2.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Registro Tutorias</h5>
+                        <p class="card-text">Estuvimos trabajando en un proyecto para que se hicieran registro de tutorias individuales o grupales que se relizaban en la universidad...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <br>
+                    <img src="img/py3.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <br>
+                        <br>
+                        <br>
+                        <h5 class="card-title">SmartStream</h5>
+                        <p class="card-text">Este proyecto estuvimos trabajando en un proyecto hecho con el lenguaje de reactNative en el cual hicimos un sistema de control de agua en el hogar...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="container mt-5 text-center">
+        <h2>Formulario</h2>
+        <form id="formulario">
+            <div class="form-group">
+                <p><strong>Nombre Completo:</strong></p>
+                <input id="nombre" placeholder="Escriba su Nombre completo" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <p><strong>Correo Electrónico:</strong></p>
+                <input id="correo" placeholder="Correo Electronico" type="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <p><strong>Teléfono:</strong></p>
+                <input id="telefono" placeholder="Telefono" type="number" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <p><strong>Explicanos tu Experiencia:</strong></p>
+                <textarea id="experiencia" placeholder="Escribe aqui un poco sobre cualquier tipo de experiencia que hayas tenido o que te haya sido única" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center mt-5">
+        <p>&copy; 2025 Mi Portafolio</p>
+        <p>Dirección: Calle Corregidora 119, San Tadeo, Calvillo, Aguascalientes, Mexico</p>
+        <p>Redes Sociales: 
+            <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100048880038691">Facebook</a> | 
+            <a href="https://github.com/reygeer">Github</a> | 
+            <a href="https://www.linkedin.com/in/juan-de-lara-a10224351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_appq2">LinkedIn</a>
+        </p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./js/main.js"></script>
+    <script src="Guardar_Formulario_en_Descargas.js"></script>
+    <script src="/Start_Boostrap/js/scripts.js"></script>
+</html>
